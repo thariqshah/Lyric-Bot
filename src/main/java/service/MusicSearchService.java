@@ -1,4 +1,4 @@
-package Service;
+package service;
 
 import DTO.TrackDTO;
 import org.javacord.api.event.message.MessageCreateEvent;
@@ -6,16 +6,17 @@ import org.jmusixmatch.MusixMatch;
 import org.jmusixmatch.MusixMatchException;
 import org.jmusixmatch.entity.lyrics.Lyrics;
 import org.jmusixmatch.entity.track.Track;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 
 public class MusicSearchService {
 
-    public static Logger log = Logger.getLogger(MusicSearchService.class.getName());
+    public static final Logger log = LoggerFactory.getLogger(MusicSearchService.class.getName());
 
 
     static String apiKey = "8649d9e1007a735e550a0fd1cf31ccef";
