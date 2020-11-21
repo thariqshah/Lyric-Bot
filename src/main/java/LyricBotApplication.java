@@ -13,7 +13,7 @@ public class LyricBotApplication {
 
 
 
-        DiscordApi api = new DiscordApiBuilder().setToken("Nzc0NzM2NzE5ODkwMzUwMDgw.X6cHyw._aZttAL58KQUhiWRraZegwTLgUA").login().join();
+        DiscordApi api = new DiscordApiBuilder().setToken("bot token here").login().join();
         //Add a listener which answers with "Pong!" if someone writes "!ping"
         api.addMessageCreateListener(event -> {
             if (event.getMessageContent().matches("!ping")) {
